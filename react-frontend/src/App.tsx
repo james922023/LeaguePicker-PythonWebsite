@@ -8,7 +8,7 @@ function App() {
     <>
     <body>
         <div id="title_section">
-            <img  style={{marginTop: '8em'}} src={titleLogo} alt="Logo"/>
+            <img src={titleLogo} alt="Logo"/>
         </div>
         <div id="horizontal_container">
             <div id="left_container">

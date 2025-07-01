@@ -1,0 +1,19 @@
+#role_images{
+    margin: 0;
+    padding: 0;
+}
+
+#roles-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#role-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}

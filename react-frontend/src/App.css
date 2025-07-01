@@ -1,36 +1,40 @@
 #chooserText{
-    all: unset;
     color:white;
-    height: 12vh;
-    width: 32vw;
     flex-shrink: 0;
     border-color: gold;
     border-style: solid;
-    font-size: 15pt;
+    font-size: 12pt;
     background-color: rgba(0, 0, 0, 0.719);
+    margin: 0;
+    padding: 0;
 }
 
 img{
-    all: unset;
     justify-self: center;
+    margin: 0;
+    padding: 0;
 }
 
 #char-select-box{
     display:flex;
     flex-direction: column;
-    height: 66vh;
-    width: 28vw;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 #statue_style{
-    width: 30vw;
+    width: 25vw;
     height:60vh;
+    margin: 0;
+    padding: 0;
 }
 
 #statue_style:hover{
-    width: 35vw;
+    width: 28vw;
     height:66vh;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 #title_section{
@@ -39,9 +43,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-self: center;
-    height:10vh;
+    height:30vh;
     margin-bottom: 2vh;
-    margin-top: 4vh;
 }
 
 #horizontal_container{
@@ -49,6 +52,8 @@ img{
     flex-direction: row;
     gap:10vw;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 #left_container, #right_container {
@@ -56,8 +61,10 @@ img{
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 66vh;
+    height: 45vh;
     width: 28vw;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
