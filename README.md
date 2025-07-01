@@ -30,3 +30,9 @@ I also added docker. Note, had to change port in dockerfilee to the matching one
 ![image](https://github.com/user-attachments/assets/61e084c9-0cdf-45f4-9b7e-fe06f4c3ccd3)
 
 As you can see, the items were added sucessfully. Before, I made the url /items run a function that takes all of the league items from the database, and then serializes them, returning a JSON for easier viewing and manipulation. I messed around with beautiful soup in an ipynb, and then once I grabbed what I wanted, I just made a python script without all of the print statements that scrapes from leagueoflegendswiki. If I ever want to updata the database with new items added, all I need to do is run that script and it will pull any new items and add them to the database. Next step is to scrape corresponding images, and have those display sucessfully.
+
+7/1/2025 - webscraped item images and worked on roles page
+![image](https://github.com/user-attachments/assets/01aff785-873f-429b-99e8-5a81d49b4d24)
+
+This is the roles page right now. I scraped these small images, along with updating the previous item script to download the images of the items. The next step is to eedit the sprites to make them slightly larger, without distortion, and then format the page like the red lines in the image above. After the role page is done, I will work on grabbing all of the items, and figuring out how I should store those and rerieve them.
+
