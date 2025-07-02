@@ -16,7 +16,8 @@ def serialize_Items(items: Iterable[LeagueItem]) -> List[Dict[str, Any]]:
     data=[]
     for item in items:
         data.append({
-            'name':item.name
+            'name':item.name,
+            'url':item.url
         })
         
     return data

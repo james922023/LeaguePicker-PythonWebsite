@@ -11,18 +11,23 @@ function Role () {
         <>
         <div id='roles-container'>
             <div id='role-container'>
+                <p>Top</p>
                 <img src={topIMG} id='role_images'></img>
             </div>
             <div id='role-container'>
+                <p>Bot</p>
                 <img src={botIMG} id='role_images'></img>
             </div>
             <div id='role-container'>
+                <p>Mid</p>
                 <img src={midIMG} id='role_images'></img>
             </div>
             <div id='role-container'>
+                <p>Supp</p>
                 <img src={supportIMG} id='role_images'></img>
             </div>
             <div id='role-container'>
+                <p>Jg</p>
                 <img src={jungleIMG} id='role_images'></img>
             </div>
         </div>
