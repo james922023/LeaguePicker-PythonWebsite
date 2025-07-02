@@ -36,3 +36,5 @@ As you can see, the items were added sucessfully. Before, I made the url /items 
 
 This is the roles page right now. I scraped these small images, along with updating the previous item script to download the images of the items. The next step is to eedit the sprites to make them slightly larger, without distortion, and then format the page like the red lines in the image above. After the role page is done, I will work on grabbing all of the items, and figuring out how I should store those and rerieve them.
 
+7/2/2025- This is what the updates pages and flow looks like right now.
+![alt text](./readmesrc/RolePage.gif)
