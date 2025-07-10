@@ -1,24 +1,30 @@
+import { useNavigate } from 'react-router-dom';
+
 import './App.css'
-import titleLogo from  './../public/images/ChampionPickerLogo.png'
-import CharacterSelect from './CharacterSelect'
+
+import Navbar from './Navbar';
 
 function App() {
-  
+  const navigate = useNavigate();
+  const handleClick=()=>{
+    navigate('/roles');
+  };
   return (
     <>
-    <body>
-        <div id="title_section">
-            <img src={titleLogo} alt="Logo"/>
+    <Navbar/>
+    <div className='TitleBox'>
+        <div id='description-box'>
+          <h2>What's up! Welcome to League Papi!</h2>
+          <p>What is it?</p>
+          <p>Im Glad You Asked!</p>
+          <p>League Papi picks characters and builds for you so you dont have to think!</p>
+          <p>No thinking! isnt that great!</p>
+          <p>Are you ready for papi to take care of you?!</p>
         </div>
-        <div id="horizontal_container">
-            <div id="left_container">
-              <CharacterSelect statueNumber={1}></CharacterSelect>
-            </div>
-            <div id="right_container">
-              <CharacterSelect statueNumber={0}></CharacterSelect>
-            </div>
-        </div>
-    </body>
+        <button className='button-13' onClick={handleClick}> YES &#128513;</button>
+    </div>
+    <div className='backgroundImageBox'>
+    </div>
     </>
   )
 }

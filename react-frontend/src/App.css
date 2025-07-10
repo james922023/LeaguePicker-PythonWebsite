@@ -1,70 +1,74 @@
-#chooserText{
-    color:white;
-    flex-shrink: 0;
-    border-color: gold;
-    border-style: solid;
-    font-size: 1vw;
-    background-color: rgba(0, 0, 0, 0.719);
-    margin: 0;
-    padding: 0;
-}
-
-img{
-    justify-self: center;
-    margin: 0;
-    padding: 0;
-}
-
-#char-select-box{
-    display:flex;
+.TitleBox{
+    display: flex;
+    justify-self:center;
     flex-direction: column;
+    align-self: center ;
     align-items: center;
-    margin: 0;
-    padding: 0;
-}
-#statue_style{
-    width: 25vw;
-    height:60vh;
-    margin: 0;
-    padding: 0;
 }
 
-#statue_style:hover{
-    width: 28vw;
-    height:66vh;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
+#titleBar{
+    background-color: black;
+    color:white;
+    align-items: center;
 }
-
-#title_section{
-    width:40vw;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    height:30vh;
-    margin-bottom: 2vh;
-}
-
-#horizontal_container{
-    display:flex;
+   
+#description-box{
+    justify-items: center;
+    background-color: white;
+    color:black;
+    font-size: 1.35em;
     flex-direction: row;
-    gap:10vw;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans";
 }
 
-#left_container, #right_container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+#description-box *{
+    margin: .3em;
     text-align: center;
-    height: 45vh;
-    width: 28vw;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
 }
+
+.backgroundImageBox {
+    display: flex;
+    background-image: url('/images/PlaystylePicker_index_background.png');
+    justify-self: center;
+    background-size: cover;
+    background-position: center 1vh;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+}
+
+.button-13{
+/* CSS */
+background-color: #fff;
+border: 1px solid #d5d9d9;
+border-radius: 8px;
+box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+box-sizing: border-box;
+color: #0f1111;
+cursor: pointer;
+display: inline-block;
+font-family: "Comic Sans MS", "Comic Sans";
+font-size: 1em;
+line-height: 29px;
+padding: 0 10px 0 11px;
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+vertical-align: middle;
+width: 8em;
+height:5em;
+}
+
+.button-13:hover{
+  background-color: #f7fafa;
+}
+
+.button-13:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
 

@@ -1,35 +1,31 @@
-import topIMG from './../public/images/Top_icon.png'
-import botIMG from './../public/images/Bottom_icon.png'
-import jungleIMG from './../public/images/Middle_icon.png'
-import midIMG from './../public/images/Jungle_icon.png'
-import supportIMG from './../public/images/Support_icon.png'
-
+import Navbar from './Navbar';
 import './Role.css'
+
+import { Link } from 'react-router-dom';
 
 function Role () {
     return(
         <>
-        <div id='roles-container'>
-            <div id='role-container'>
-                <p>Top</p>
-                <img src={topIMG} id='role_images'></img>
+        <Navbar/>
+        <div id='role'>
+            <div id='roles-container'>
+                <div id='role-container'>
+                    <Link to="/details"><img src='/images/Top_icon.png' id='role_images'></img></Link>
+                </div>
+                <div id='role-container'>
+                    <Link to="/details"><img src="/images/Bottom_icon.png" id='role_images'></img></Link>
+                </div>
+                <div id='role-container'>
+                    <Link to="/details"><img src="/images/Middle_icon.png" id='role_images'></img></Link>
+                </div>
+                <div id='role-container'>
+                    <Link to="/details"><img src="/images/Support_icon.png" id='role_images'></img></Link>
+                </div>
+                <div id='role-container'>
+                    <Link to="/details"><img src="/images/Jungle_icon.png" id='role_images'></img></Link>
+                </div>
             </div>
-            <div id='role-container'>
-                <p>Bot</p>
-                <img src={botIMG} id='role_images'></img>
-            </div>
-            <div id='role-container'>
-                <p>Mid</p>
-                <img src={midIMG} id='role_images'></img>
-            </div>
-            <div id='role-container'>
-                <p>Supp</p>
-                <img src={supportIMG} id='role_images'></img>
-            </div>
-            <div id='role-container'>
-                <p>Jg</p>
-                <img src={jungleIMG} id='role_images'></img>
-            </div>
+            <p id='Choose_Role'>CHOOSE YOUR ROLE!</p>
         </div>
         </>
     )
