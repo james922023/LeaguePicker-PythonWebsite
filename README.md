@@ -61,4 +61,4 @@ Here is Dynamic Page sizes.
 And finnaly, here is the secure backend, that has admin login to do the post and see that page.
 ![alt text](./react-frontend/public/showing-backend.gif)
 
-This was lots of work but im excited that I can take a break and call this a checkpoint of PROTOYPE 1 DONE!!!
+This was lots of work but im excited that I can take a break and call this a checkpoint of PROTOYPE 1 DONE!!
