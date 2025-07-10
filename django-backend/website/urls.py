@@ -17,8 +17,27 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from PlaystylePicker import views
+from PlaystylePicker.views import ReactAppView
+from django.conf.urls.static import static
+from django.conf import settings
+import os
+from django.contrib.auth.decorators import login_required, user_passes_test
+
+admin_only_view = user_passes_test(lambda u: u.is_authenticated and u.is_staff)(ReactAppView.as_view())
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('items/', include("PlaystylePicker.urls")),
+    path('get/', include("PlaystylePicker.urls")),
+    path('api/',include("PlaystylePicker.urls")),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('', ReactAppView.as_view(), name='react_app'),  # React app route
+    
+    # Restrict /details to admin users
+    path('createbuild/', admin_only_view, name='react_admin_only'),
 ]
+
+# Serve images folder from React build at /images/
+urlpatterns += static(
+    '/images/',
+    document_root=os.path.join(settings.BASE_DIR, 'PlaystylePicker', 'frontend', 'build', 'images')
+)

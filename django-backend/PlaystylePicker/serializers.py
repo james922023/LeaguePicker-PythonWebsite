@@ -1,7 +1,8 @@
 from .models import LeagueItem
 from typing import Iterable, List, Dict, Any
-
-#function to take an objects from database and turn them into JSON form
+from rest_framework import serializers
+from .models import TopBuilds
+#custom function to take an objects from database and turn them into JSON form
 
 def serialize_Items(items: Iterable[LeagueItem]) -> List[Dict[str, Any]]:
     """
@@ -21,3 +22,9 @@ def serialize_Items(items: Iterable[LeagueItem]) -> List[Dict[str, Any]]:
         })
         
     return data
+
+#FRAMEWORK ONES ->
+class Build_serializer(serializers.ModelSerializer):
+    class Meta:
+        model=TopBuilds
+        fields=['champion', 'items', 'runes', 'ability_order']

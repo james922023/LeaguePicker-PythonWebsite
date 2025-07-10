@@ -38,3 +38,27 @@ This is the roles page right now. I scraped these small images, along with updat
 
 7/2/2025- This is what the updates pages and flow looks like right now.
 ![alt text](./react-frontend/public/RolePage.gif)
+
+7/10/2025 - FIRST PROTOTYPE DONE!!!
+
+It has been a while, so this will be a long description. Basically, 
+- I grabbed all of the pictures from the site and have python scripts to do so.
+- I made models for each, so there is a table for everything needed in my database(Items, Champs, Builds, Runes)
+- I downloaded django-REST api, so that I can make posts easily
+- I madee the host (http:blahblahblah) the same for both my front end and backend so they can talk to each other and pass auth tokens easily.
+- I needed auth tokens, so I can restrict access to POST, for only admins.
+- I made the POST page, only available for admins , so if someone tries to go to that url, they cant, unless they have signed in and have cookies!
+- I further added stylings and made sure pages layout works for mobile and desktop
+- Roles page redirects to details page, which pull a random object and its components (runes champ etc) from the corresponding role table.
+- Remade thee home page and what the site is called! I think it looks nicer!
+
+Here is the page flow.
+![alt text](./react-frontend/public/PageFlowPrototype1.gif)
+
+Here is Dynamic Page sizes.
+![alt text](./react-frontend/public/Proof-of-dynamic-page-size.gif)
+
+And finnaly, here is the secure backend, that has admin login to do the post and see that page.
+![alt text](./react-frontend/public/showing-backend.gif)
+
+This was lots of work but im excited that I can take a break and call this a checkpoint of PROTOYPE 1 DONE!!!
