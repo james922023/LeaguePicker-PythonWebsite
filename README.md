@@ -55,3 +55,7 @@ And finnaly, here is the secure backend, that has admin login to do the post and
 ![alt text](./react-frontend/public/showing-backend.gif)
 
 This was lots of work but im excited that I can take a break and call this a checkpoint of PROTOYPE 1 DONE!!
+
+7/17/2025 - FULLY FUNCTIONAL
+
+THE TITLE IS TRUE! The SITE IS FULLY FUNCTIONAL!!! I can Add builds if you are admin on the /admin page, and they are POST-ed to thier corresponding tables. If you are not an admin, you can only see the normal page flow where you select a role, and then a random object from the corresponding role table is retrived with all of the build information. I could make this better, like having it pull build stuff from other sites and more web scraping, but that would make it more complex and defeat the purpose of being builds the way I like them. As it stands I say that this is a sucessfull V 1.0. The only other thing I could do is change it from working only on my machine to using a service like AWS for my server, or some other service to get a domain so people can access the site outside from the internet. Anyways now this is a proper checkpoint!
