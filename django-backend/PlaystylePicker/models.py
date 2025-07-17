@@ -48,3 +48,58 @@ class TopBuilds(models.Model):
         Function to print out, data on object when .all() function is calleed
         """
         return (f'{self.champion}-{self.items}-{self.runes}-{self.ability_order}')
+
+class MidBuilds(models.Model):
+    
+    champion = models.CharField(max_length=100)
+    items = models.JSONField()
+    runes = models.JSONField()
+    ability_order = models.JSONField()
+    
+    def __str__(self)->str:
+        """
+        Function to print out, data on object when .all() function is calleed
+        """
+        return (f'{self.champion}-{self.items}-{self.runes}-{self.ability_order}')
+    
+
+class BotBuilds(models.Model):
+    
+    champion = models.CharField(max_length=100)
+    items = models.JSONField()
+    runes = models.JSONField()
+    ability_order = models.JSONField()
+    
+    def __str__(self)->str:
+        """
+        Function to print out, data on object when .all() function is calleed
+        """
+        return (f'{self.champion}-{self.items}-{self.runes}-{self.ability_order}')
+
+
+class JungleBuilds(models.Model):
+    
+    champion = models.CharField(max_length=100)
+    items = models.JSONField()
+    runes = models.JSONField()
+    ability_order = models.JSONField()
+    
+    def __str__(self)->str:
+        """
+        Function to print out, data on object when .all() function is calleed
+        """
+        return (f'{self.champion}-{self.items}-{self.runes}-{self.ability_order}')
+
+
+class SupportBuilds(models.Model):
+    
+    champion = models.CharField(max_length=100)
+    items = models.JSONField()
+    runes = models.JSONField()
+    ability_order = models.JSONField()
+    
+    def __str__(self)->str:
+        """
+        Function to print out, data on object when .all() function is calleed
+        """
+        return (f'{self.champion}-{self.items}-{self.runes}-{self.ability_order}')

@@ -17,6 +17,8 @@ function CreateBuild () {
     const [LeagueRunes, setLeagueRunes] = useState <LeagueRune[]> ([])
     const [selectedRunes, setSelectedRunes] = useState<LeagueRune[]>([]);
 
+    const [selectedRole, setSelectedRole] = useState<string>('');
+
     interface LeagueChamp {
         name: string;
         url: string;
@@ -104,7 +106,9 @@ function CreateBuild () {
             ability_order: abilityOrder
         };
 
-        axios.post('http://127.0.0.1:8000/api/topbuilds/', postData, {
+        const postUrl = `http://127.0.0.1:8000/api/${selectedRole.toLowerCase()}builds/`;
+
+        axios.post(postUrl, postData, {
             withCredentials: true,
             headers:{
                 'X-CSRFToken': getCookie('csrftoken') || ''
@@ -155,6 +159,21 @@ function CreateBuild () {
                     selectedRunes={selectedRunes}
                     onItemClick={handleRuneClick}
                 />
+            <div className="role-selector">
+                <p>Select Role:</p>
+                {['Top', 'Mid', 'Jungle', 'Support', 'Bot'].map(role => (
+                    <label key={role}>
+                    <input
+                        type="radio"
+                        value={role}
+                        checked={selectedRole === role}
+                        onChange={(e) => setSelectedRole(e.target.value)}
+                        name="role"
+                    />
+                    {role}
+                    </label>
+                ))}
+            </div>
             <button className="submit_button" onClick={handleSubmit}>ADD BUILD!</button>
         </div>
         </>

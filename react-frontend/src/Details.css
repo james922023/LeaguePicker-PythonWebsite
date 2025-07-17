@@ -1,0 +1,32 @@
+.details-page{
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.322);
+    font-size: 2rem;
+    border: solid;
+    border-color: rgba(214, 184, 10, 0.74);
+}
+
+.abilityList{
+    display: flex;
+    list-style-position:inside;
+    gap:1em;
+}
+
+#Detail-Background{
+    background-image: url('/images/PlaystylePicker_index_background.png');
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-position: center 1vh;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+}
+
+.item-images img{
+    height: 100%;
+}
