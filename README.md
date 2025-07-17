@@ -7,6 +7,8 @@ This app will randomly select a champion to play, based on a selected role.
 # How Does this work?
 I will have a database with preset champions, items, skillorders, and runes the way I would play them. Upon clicking the button, it will show everything in the order I would like it as an assistnace to building my character the way I normally do it, so I dont have to think.
 
+![alt text](./react-frontend/public/FullyFunctional.gif)
+
 # Updates
 
 6/27/2025 - Basic View Created
